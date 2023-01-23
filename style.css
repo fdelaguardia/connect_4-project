@@ -3,7 +3,7 @@
 
 
 body {
-    background-image: url(/images/brickWall.jpg);
+    background-image: url(./images/brickWall.jpg);
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
