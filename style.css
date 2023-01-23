@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+
+
+body {
+    background-image: url(/images/brickWall.jpg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Alex Brush;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    font-size: 100px;
+    font-weight:900;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#start-game-button {
+    color: cyan;
+    font-size: 50px;
+    background-color: blueviolet;
+    margin-top: 0px;
+}
+
+#game {
+    visibility: hidden;
+    height: 5px;
+}
+
