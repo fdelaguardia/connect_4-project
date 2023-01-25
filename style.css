@@ -7,26 +7,115 @@ body {
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 700px;
     font-family: Alex Brush;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
-    align-items:center;
-    justify-content: center;
+    align-items: center;
 }
 
 h1 {
     color: white;
-    font-size: 100px;
+    font-size: 125px;
     font-weight:900;
     margin-top: 20px;
     text-align: center;
+    text-shadow:
+      0 0 1px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 11px #FF10F0,
+      0 0 20px #FF10F0,
+      0 0 30px #FF10F0,
+      0 0 35px #FF10F0,
+      0 0 40px #FF10F0;
+}
+.winkling {
+    animation: wink 1.5s infinite alternate;
+    text-shadow:
+      0 0 1px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 11px #FF10F0,
+      0 0 20px #FF10F0,
+      0 0 30px #FF10F0,
+      0 0 35px #FF10F0,
+      0 0 40px #FF10F0;
+}
+@keyframes wink {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #FF10F0,
+        0 0 80px #FF10F0,
+        0 0 90px #FF10F0,
+        0 0 100px #FF10F0,
+        0 0 150px #FF10F0;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+h1 span {
+    animation: wink-two 5s infinite alternate;
+    text-shadow:
+      0 0 1px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 11px cyan,
+      0 0 20px cyan,
+      0 0 30px cyan,
+      0 0 35px cyan,
+      0 0 40px cyan;
+}
+@keyframes wink-two {
+     25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px cyan,
+        0 0 80px cyan,
+        0 0 90px cyan,
+        0 0 100px cyan,
+        0 0 150px cyan;
+    
+    }
+    
+    55% {        
+        text-shadow: none;
+    } 
 }
 
 #start-game-button {
-    color: cyan;
+    font-family: Alex Brush;
+    padding: 15px 50px;
+    color: white;
     font-size: 50px;
-    background-color: blueviolet;
-    margin-top: 0px;
+    font-weight:900;
+    text-shadow:
+      0 0 1px #ffff00,
+      0 0 4px #ffff00,
+      0 0 6px #ffff00;
+     
+
+    background-color: transparent;
+    border: 10px solid #ffff00;
+    border-radius: 20px;
+    box-shadow: 0 0 1px #fff,
+              0 0 4px #fff,
+              0 0 6px #ffff00,
+              0 0 11px #ffff00,
+              0 0 20px #ffff00,
+              inset 0 0 30px #ffff00;
 }
 
 #game {
