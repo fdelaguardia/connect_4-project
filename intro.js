@@ -14,6 +14,7 @@ let winnerArray = playersTable;
 
 
 
+
 function tableColumn(positionX) {
   ctx.beginPath();
   ctx.shadowBlur = 5
@@ -302,6 +303,7 @@ function startGame() {
     canvas.style.width = "900px"
     canvas.style.height = "700px"
     canvas.style.visibility = "visible"
+    
     tableColumn(100)
     tableColumn(200)
     tableColumn(300)
@@ -318,7 +320,7 @@ function startGame() {
     triangleBtn(550, 525, 575)
     triangleBtn(650, 625, 675)
     triangleBtn(750, 725, 775)
-    
+      
     text("#FF10F0", "Player 1", 340, 60, '90px Alex Brush')
     play()
 }
@@ -478,6 +480,9 @@ function addPiece (columnHeight, rowPixelsX, color, columnNumber){
             ctx.clearRect(0,0,900,90)
             continuePlaying = false;
             text("#FF10F0", "Player 1 Wins !", 180, 60, '90px Alex Brush')
+
+            canvas.style.backgroundImage = "url(./images/celebrationPink.gif)"
+            canvas.style.backgroundSize = "450px 350px"
           
             turnOff(color)
             playAgainBtn()
@@ -486,6 +491,9 @@ function addPiece (columnHeight, rowPixelsX, color, columnNumber){
             ctx.clearRect(0,0,900,90)
             continuePlaying = false;
             text("cyan", "Player 2 Wins !", 180, 60, '90px Alex Brush')
+
+            canvas.style.backgroundImage = "url(./images/celebrationBlue.gif)"
+            canvas.style.backgroundSize = "450px 350px"
 
             turnOff(color)
             playAgainBtn()
