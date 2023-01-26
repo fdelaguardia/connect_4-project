@@ -100,39 +100,39 @@ function playAgainBtn(){
 
 
         ctx.lineWidth = 0.5;
-        ctx.shadowBlur = 30;
+        ctx.shadowBlur = 10;
         ctx.shadowColor = "#ffff00"
         ctx.font = '60px Alex Brush';
-        ctx.strokeStyle = "#ffff00"
-        ctx.strokeText("Play Again", 310, 660);
+        ctx.fillStyle = "white"
+        ctx.fillText("Play Again", 310, 660);
 
         ctx.lineWidth = 0.5;
-        ctx.shadowBlur = 30;
+        ctx.shadowBlur = 10;
         ctx.shadowColor = "#ffff00"
         ctx.font = '60px Alex Brush';
-        ctx.strokeStyle = "#ffff00"
-        ctx.strokeText("Play Again", 310, 660);
+        ctx.fillStyle = "#white"
+        ctx.fillText("Play Again", 310, 660);
 
         ctx.lineWidth = 0.5;
-        ctx.shadowBlur = 30;
+        ctx.shadowBlur = 10;
         ctx.shadowColor = "#ffff00"
         ctx.font = '60px Alex Brush';
-        ctx.strokeStyle = "#ffff00"
-        ctx.strokeText("Play Again", 310, 660);
+        ctx.fillStyle = "#white"
+        ctx.fillText("Play Again", 310, 660);
 
         ctx.lineWidth = 0.5;
-        ctx.shadowBlur = 30;
+        ctx.shadowBlur = 10;
         ctx.shadowColor = "#ffff00"
         ctx.font = '60px Alex Brush';
-        ctx.strokeStyle = "#ffff00"
-        ctx.strokeText("Play Again", 310, 660);
+        ctx.fillStyle = "#white"
+        ctx.fillText("Play Again", 310, 660);
 
         ctx.lineWidth = 0.5;
-        ctx.shadowBlur = 30;
+        ctx.shadowBlur = 10;
         ctx.shadowColor = "#ffff00"
         ctx.font = '60px Alex Brush';
-        ctx.strokeStyle = "#ffff00"
-        ctx.strokeText("Play Again", 310, 660); 
+        ctx.fillStyle = "#white"
+        ctx.fillText("Play Again", 310, 660); 
     }, 1000)
 }
 
@@ -258,36 +258,36 @@ function text(color, string, xPosition, yPosition, font){
     ctx.shadowBlur = 10;
     ctx.shadowColor = color
     ctx.font = font;
-    ctx.strokeStyle = color
-    ctx.strokeText(string, xPosition, yPosition);
+    ctx.fillStyle = "white"
+    ctx.fillText(string, xPosition, yPosition);
 
     ctx.lineWidth = 1;
     ctx.shadowBlur = 10;
     ctx.shadowColor = color
     ctx.font = font;
-    ctx.strokeStyle = color
-    ctx.strokeText(string, xPosition, yPosition);
+    ctx.fillStyle = "white"
+    ctx.fillText(string, xPosition, yPosition);
 
     ctx.lineWidth = 1;
     ctx.shadowBlur = 10;
     ctx.shadowColor = color
     ctx.font = font;
-    ctx.strokeStyle = color
-    ctx.strokeText(string, xPosition, yPosition);
+    ctx.fillStyle = "white"
+    ctx.fillText(string, xPosition, yPosition);
     
     ctx.lineWidth = 1;
     ctx.shadowBlur = 10;
     ctx.shadowColor = color
     ctx.font = font;
-    ctx.strokeStyle = color
-    ctx.strokeText(string, xPosition, yPosition);
+    ctx.fillStyle = "white"
+    ctx.fillText(string, xPosition, yPosition);
 
     ctx.lineWidth = 1;
     ctx.shadowBlur = 10;
     ctx.shadowColor = color
     ctx.font = font;
-    ctx.strokeStyle = color
-    ctx.strokeText(string, xPosition, yPosition);
+    ctx.fillStyle = "white"
+    ctx.fillText(string, xPosition, yPosition);
 }
 
 
@@ -330,8 +330,6 @@ function startGame() {
 
 
 function play(){
-
-    console.log(continuePlaying)
     
     canvas.addEventListener("click", (event) => {
         const rect = canvas.getBoundingClientRect()
@@ -481,7 +479,7 @@ function addPiece (columnHeight, rowPixelsX, color, columnNumber){
             continuePlaying = false;
             text("#FF10F0", "Player 1 Wins !", 180, 60, '90px Alex Brush')
 
-            canvas.style.backgroundImage = "url(./images/celebrationPink.gif)"
+            canvas.style.backgroundImage = "url(images/celebrationPink.gif)"
             canvas.style.backgroundSize = "450px 350px"
           
             turnOff(color)
@@ -492,7 +490,7 @@ function addPiece (columnHeight, rowPixelsX, color, columnNumber){
             continuePlaying = false;
             text("cyan", "Player 2 Wins !", 180, 60, '90px Alex Brush')
 
-            canvas.style.backgroundImage = "url(./images/celebrationBlue.gif)"
+            canvas.style.backgroundImage = "url(images/celebrationBlue.gif)"
             canvas.style.backgroundSize = "450px 350px"
 
             turnOff(color)
